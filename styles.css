@@ -1,0 +1,197 @@
+/* General  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Count Down */
+
+#count-down {
+  font-size: 30vw;
+  line-height: 70vh;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+/* Floatings */
+div#floatings {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+div.floatbg {
+  background: rgba(255, 255, 0, 0.2);
+}
+
+/* Buttons */
+button {
+  background-color: #fc0;
+  box-shadow: inset 0 1px 2px #ffdc51, inset 0 -1px 2px #8c5c00,
+    0 -0.2rem 0.4rem rgb(255 204 0 / 20%), 0 0.1rem 0.2rem rgb(255 204 0 / 20%),
+    0 0.4rem 0.6rem rgb(0 0 0 / 20%);
+  background-image: linear-gradient(#ffd21f, #ffd21f 40%, #fc0 55%, #fc0);
+  color: #241d00;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+div button {
+  position: absolute;
+}
+div button#add,
+div button#minus {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+div button#add {
+  right: 5%;
+  bottom: 55%;
+}
+
+div button#minus {
+  right: 5%;
+  bottom: 45%;
+}
+
+div button#pause {
+  right: 50%;
+  bottom: 20%;
+}
+
+div button#start {
+  right: 50%;
+  bottom: 20%;
+}
+
+div button#reset {
+  right: 50%;
+  bottom: 10%;
+}
+
+/* Bouncing Balls */
+div div {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  top: 110%;
+}
+
+div div#bounce1 {
+  right: 10%;
+  animation: bounce 5s infinite 0.5s;
+}
+div div#bounce2 {
+  right: 30%;
+  animation: bounce 5s infinite 1s;
+}
+div div#bounce3 {
+  right: 50%;
+  animation: bounce 5s infinite 1.5s;
+}
+div div#bounce4 {
+  right: 70%;
+  animation: bounce 5s infinite 2s;
+}
+div div#bounce5 {
+  right: 90%;
+  animation: bounce 5s infinite 2.5s;
+}
+
+div div#bounce6 {
+  right: 15%;
+  animation: bounceReverse 5s infinite 0.5s;
+}
+div div#bounce7 {
+  right: 35%;
+  animation: bounceReverse 5s infinite 1s;
+}
+div div#bounce8 {
+  right: 55%;
+  animation: bounceReverse 5s infinite 1.5s;
+}
+div div#bounce9 {
+  right: 75%;
+  animation: bounceReverse 5s infinite 2s;
+}
+div div#bounce10 {
+  right: 95%;
+  animation: bounceReverse 5s infinite 2.5s;
+}
+
+@keyframes bounceReverse {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -10%;
+  }
+}
+
+/* Texts */
+#floatings p {
+  position: absolute;
+}
+p#seconds {
+  bottom: 20%;
+  right: 25%;
+  font-size: 3vw;
+}
+p#minutes {
+  bottom: 20%;
+  left: 15%;
+  font-size: 3vw;
+}
+
+p#info {
+  top: 5%;
+  left: 5%;
+  font-size: 2vw;
+  color: #ffd21f;
+}
+
+p#preferences {
+  top: 5%;
+  left: 15%;
+  color: #ffd21f;
+  font-size: 2vw;
+}
+
+p#repeat {
+  top: 5%;
+  right: 15%;
+  color: #ffd21f;
+  font-size: 2vw;
+}
+p#fullscreen {
+  top: 5%;
+  right: 5%;
+  color: #ffd21f;
+  font-size: 2vw;
+}
