@@ -1,9 +1,42 @@
+/* Getting the ID of an element */
+
+#countdown {
+  color: blue;
+}
+
+/* Getting ClassName\ */
+.countdown {
+}
+
+button {
+  color: blue;
+  height: 100vh;
+}
+
+/* selector{
+  property: value
+
+} */
+
+#count-down {
+  color: blue;
+}
+
+p.counting {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
 /* General  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   background-color: black;
